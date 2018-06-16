@@ -6,7 +6,7 @@ export function home() {
             
         </section>
     `
-
+ 
     return {
        
     }
