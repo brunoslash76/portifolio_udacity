@@ -12,52 +12,90 @@
 
 	<!-- HEADING AREA -->
 	<!-- TODO: add images and  -->
-	<head>
+
+	<header>
 		<!-- BRANDING -->
-		<section>
-			<picture>
-				<!-- MOBILE -->
-				<source>
-				<!-- TABLET -->
-				<source>
-				<!-- DESKTOP / FALLBACK -->
-				<img src="" alt="">
-			</picture>
-			<section>
-				<h1>Bruno de Moraes</h1>
-				<p>Front-End Devevoper</p>
-			</section>
+		<picture class="header-branding">
+			<!-- MOBILE -->
+			<source media="(min-width: 320px)" srcset="
+				img/logo_93x45px.png
+			">
+			<!-- TABLET -->
+			<source media="(min-width: 768px)" srcset="">
+			<!-- DESKTOP / FALLBACK -->
+			<img src="" alt="L4IT logo">
+		</picture>
+
+		<section class="info-header">
+			<h1>Bruno de Moraes</h1>
+			<p>Front-End Devevoper</p>
 		</section>
-		<!-- NAVIGATION MENU -->
-		<nav>
-			<ul>
-				<li>Home</li>
-				<li>Quem sou</li>
-				<li>Contato</li>
-			</ul>
-		</nav>
-	</head>
-	<!-- MAIN CONTENT -->
-	<main>
-		<section id="home">
-			<!-- Main Picture -->
-			<figure>
-				<picture>
-					<!-- mobile img -->
-					<source>
-					<!-- tablet img  -->
-					<source>
-						<!-- desktop / fallback -->
-					<img src="" alt="">
-				</picture>
-			</figure>
+	</header>
 
+	<hr>
+
+	<main>
+		<article id="home">
+			<!-- Main Picture -->
+			<a href="https://github.com/brunoslash76" target="_blank">
+				<figure class="figure-wrapper">
+					<div class="image-cover">
+					</div>
+					<picture>
+						<!-- mobile img -->
+						<source media="(min-width: 320px)" srcset="./img/main_img_mobile_300x197px.png">
+						<!-- tablet img  -->
+						<source media="(min-width: 768px)">
+						<!-- desktop / fallback -->
+						<img class="main-image" src="" alt="">
+					</picture>
+					<figcaption class="overlay-caption">
+						Know more about Bruno's code
+					</figcaption>
+				</figure>
+			</a>
+		</article>
+		<!--  -->
+		<section>
+			<h2>Featured Work</h2>
 			<section>
 
-			</section>
+				<!-- Music -->
+				<figure>
+					<h3>Bruno's songs</h3>
+					<iframe width="100%" height="320" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/88239969&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+					</iframe>
+				</figure>
 
+				<!-- Photography -->
+				<a href="https://www.flickr.com/photos/atmosfearexperience/albums/72157629144434575" target="_blank">
+					<h3>My photos ;)</h3>
+					<figure class="figure-wrapper">
+						<div class="image-cover">
+						</div>
+						<picture>
+							<!-- Mobile -->
+							<source media="(min-width: 320px)" srcset="img/photography-mobile-425x425px.jpg, img/photography-mobile_retina-850x850px.jpg 2x">
+							<!-- Tablet -->
+							<source media="(min-width: 768px)">
+							<!-- Desktop -->
+							<img class="img-responsive" src="" alt="A hand holding a camera, in the background huge green rocky mountains">
+						</picture>
+						<figcaption class="overlay-caption">
+							See more pictures...
+						</figcaption>
+					</figure>
+				</a>
+				<!-- Video -->
+				<figure>
+					<h3>My videos</h3>
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/ioRO-QNsDpU" frameborder="0" allow="autoplay; encrypted-media"
+					 allowfullscreen></iframe>
+				</figure>
+			</section>
 		</section>
 	</main>
 
 </body>
+
 </html>

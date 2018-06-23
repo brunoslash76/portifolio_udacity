@@ -1,0 +1,85 @@
+/*
+    reset
+*/
+html {
+    font-family: sans-serif;
+    color: #444;
+}
+
+figure {
+    margin: 0;
+}
+
+/* My Styles */
+/* HEADER */
+header {
+    display: flex;
+    flex-flow: column;
+    margin-top: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-branding {
+    text-align: center;
+}
+
+.info-header {
+    text-align: right;
+}
+
+.info-header h1 {
+    font-size: 37px;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.info-header p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+/* MAIN CONTENT */
+.main-image {
+    width: 100%;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+.figure-wrapper{
+    position: relative;
+}
+
+.overlay-caption {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+    text-shadow: 3px 3px 3px #333;
+}
+
+
+
+/* MEDIA QUERY FOR TABLET */
+@media screen and (min-width: 768px) {
+
+}
+/* MEDIA QUERY FOR DESKTOP */
+@media screen and (min-width: 1024px) {
+    /* MAIN */
+    .main-image {
+        filter: blur(2px);
+        transform: all .3s ease-in-out;
+        transition: all .1s ease-in-out;
+    }
+
+    .main-image:hover {
+        filter: blur(0px)
+    }
+}
