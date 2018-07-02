@@ -117,7 +117,6 @@ footer section a {
     /* MAIN */
     .main-image {
         filter: blur(2px);
-        transform: all .3s ease-in-out;
         transition: all .6s ease-in-out;
     }
     .main-image:hover {
